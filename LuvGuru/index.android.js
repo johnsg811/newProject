@@ -26,7 +26,7 @@ class LuvGuru extends Component {
       <View style={styles.container}>
         <Text style={styles.heading}>Emilia's Profile</Text>
          <View style={styles.card}>
-            <Swiper style={styles.wrapper} height={260} horizontal={false}
+            <Swiper style={styles.wrapper} height={260}  horizontal={false}
                 onMomentumScrollEnd={(e, state, context) => console.log('index:', state.index)}
                 paginationStyle={{
                   bottom: -23, left: null, right: 10
@@ -68,7 +68,8 @@ class LuvGuru extends Component {
 }
 
 var user = { name: 'Emilia', age: 29, Gender: 'Female' };
-
+var w = Dimensions.get('window').width; //full width
+var h = Dimensions.get('window').height; //full height
 
 const styles = StyleSheet.create({
     container: {
